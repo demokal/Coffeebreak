@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Info</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+        
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/coffeeicon.svg" alt="bootstrap" width="30" height="24" class="d-inline-block" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/catalogo.html">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link search" href="./pages/about.html">About us</a>
+        
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link search" href="./pages/novedades.html">Novedades</a>
+        
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text" style="margin-right: 50px;">
+                        ¡Bienvenido a Coffeebreak! 
+                    </span>
+                    <li class="nav-item sesion">
+                        <a class="btn btn-outline-success" href="./pages/contacto.html"
+                         role="button" >Write a review</a>
+                        <ul class="dropdown-menu"></ul>
+                    </li>
+                </div>
+            </div>
+        
+        </nav>
+    
+    
+    
+    </header>
+
+
+
+    <main>
+
+        <h1>Bienvenido a Coffeebreak</h1>
+
+        <h2>El cafe evoluciono con el paso del tiempo</h2>
+
+        <p>
+            El café para muchos se convirtio en un rito. una de las dimensiones más profundas y hermosas de su consumo
+            va mucho más allá de la necesidad de cafeína, se trata de significado, conexión y un momento de pausa en lo
+            cotidiano.
+        </p>
+
+        <h3>Estas son unas de las ultimas novedades</h3>
+
+        <h4>Visita nuestro catalogo para ver mas</h4>
+
+        <section class="borderin img-fluid">
+
+
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/capuccino.jpg" class="w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Classic capuccino</h5>
+                            <p>Click the image to see instruccions.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/cafedubai.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Café Dubai</h5>
+                            <p>Click the image to see instruccions.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/capuccino.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Capuccino con leche</h5>
+                            <p>Click the image to see instruccions.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </section>
+
+        <h3>Nuestras Recomendaciones!</h3>
+
+        <p>Mantén tu frescura, cambia la temperatura. Una pausa refrescante con todo el carácter.</p>
+
+        <section class="borderin img-fluid ">
+
+            <div id="carouselExampleCaptions2" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/caramelicedcoffee.jpg" class="w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Classic capuccino</h5>
+                            <p>Click the image to see instruccions.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/cafepist.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Café Dubai</h5>
+                            <p>Click the image to see instruccions.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/capuccino.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Capuccino con leche</h5>
+                            <p>Click the image to see instruccions.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> 
+ 
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+        <div>
+            <div>
+                <h4>redes sociales</h4>
+                <ul class="contactos">
+                    <li><a href="https://www.instagram.com/agu.sferre/"><img src="./img/instagram.webp" alt="instagram" id="ig"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100009521592303"><img src="./img/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://x.com/agu_sferre"><img src="./img/twitter.svg" alt="twitter"></a></li>
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h4>contacto</h4>
+                <ul>
+                    <li>+54 ** ****-****</li>
+                    <li>Carmonaagustin905@gmail.com</li>
+                </ul>
+
+                
+
+            </div>
+
+            <div>
+                <p>Sitio echo por Carmona Agustin</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

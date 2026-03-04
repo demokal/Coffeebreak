@@ -1,0 +1,65 @@
+@use '../utilities/mixins' as *;
+
+.bordercat{
+    margin: 50px 0px 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+}
+main h1{
+    margin-top: 100px;
+}
+
+.bordercat div{
+    margin: auto;
+
+}
+
+.bordercat div img{
+    height: 350px;
+    width: 450px;
+    border-radius: 5px;
+
+}
+
+.colorcard{
+    background-color: rgb(179, 125, 71);
+    height: fit-content;
+    box-shadow: 0 0 5px rgba(59, 35, 4, 0.582);
+    &:hover{
+        transform: scale(1.03);
+        transition-property: transform;
+        transition-duration: 0.1s;
+        transition-timing-function: ease;
+    
+    }
+}
+
+.modal-color{
+    background-color: rgb(121, 105, 89);
+    border-radius: 10px
+}
+
+.colorcard:hover{
+    background-color: rgba(165, 60, 8, 0.795);
+    color: white;
+    box-shadow: 0 0 5px rgba(59, 35, 4, 0.582);
+}
+
+
+@media (max-width: 520px) {
+    .bordercat{
+        @include flex(column, wrap );
+    }
+
+    .bordercat div img{
+        width: 275px;
+        height: 250px;
+    }
+
+    .bordercat div a{
+        height: 240px;
+
+}
+}
+

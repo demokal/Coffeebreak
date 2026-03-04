@@ -1,0 +1,37 @@
+.aboutus{
+    margin-bottom: 50px;
+    background-color: rgb(240, 240, 240);
+}
+
+.container div div p::first-letter{
+    font-size: 30px;
+    color: rgb(5, 145, 24);
+    font-weight: bold;
+}
+
+div h3:first-child{
+    font-size: 25px;
+    background-color: rgba(145, 89, 5, 0.616);
+    width: fit-content;
+    margin: 0px auto 10px auto;
+}
+
+
+
+
+.borderab{
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    background-image: url(../img/muralcafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.colortext{
+    color: rgb(167, 86, 5);
+}

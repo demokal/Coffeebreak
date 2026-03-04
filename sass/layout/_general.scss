@@ -1,0 +1,112 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/variables' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-general ; 
+    background-color: whitesmoke;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+.text-deco{
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+
+.container img {
+    @include img(1100px, 800px );
+    border: 3px solid rgb(107, 80, 45);    
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+
+p{
+    font-size:$p-size ;
+}
+
+header{
+    background-color: $header-color;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    font-size: 17px;   
+        li a:hover{
+            background-color: rgb(121, 77, 63);
+            border-bottom: 1px solid rgb(255, 255, 255);
+        }
+        
+   
+}
+
+
+
+.sesion{
+    margin-right: 70px; 
+}
+
+
+
+
+
+footer{
+    background-color: $footer-color;
+    color: white;  
+    padding: 5px 0px 2px 0px;
+    @include flex(null, wrap );
+
+
+
+}
+
+footer h4, footer p{
+    align-self:center ;
+
+}
+
+
+footer div{
+    @include flex(null, wrap );
+    justify-content: space-evenly;
+    margin: 0px;
+    gap: 20px;
+
+}
+
+footer div ul{
+    display: flex;
+    gap: 20px;
+    align-self: center;
+}
+
+
+
+ul li a img{
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+#ig{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+
+}
+

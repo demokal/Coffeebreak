@@ -15,10 +15,6 @@ body {
   margin: 0px;
 }
 
-.text-deco {
-  text-align: center;
-}
-
 li {
   list-style: none;
 }
@@ -27,10 +23,6 @@ li {
   width: 1100px;
   height: 800px;
   border: 3px solid rgb(107, 80, 45);
-}
-
-h1 {
-  margin-bottom: 30px;
 }
 
 p {
@@ -52,6 +44,10 @@ header li a:hover {
 
 .sesion {
   margin-right: 70px;
+}
+
+main {
+  text-align: center;
 }
 
 footer {
@@ -98,10 +94,6 @@ ul li a img {
   margin: 30px auto;
 }
 
-.main-background {
-  background: linear-gradient(rgb(241, 241, 241) 0% 35%, rgb(230, 190, 166));
-}
-
 @media (max-width: 1200px) {
   .container img {
     width: 350px;
@@ -122,42 +114,20 @@ ul li a img {
 }
 .main-h1 {
   animation-name: h1-index;
-  animation-iteration-count: inherit;
+  animation-iteration-count: initial;
   animation-duration: 2s;
-  animation-timing-function: ease;
-  text-align: center;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
 }
 
 @keyframes h1-index {
   from {
-    transform: translate(0px, -40px);
+    transform: translate(10px, -200px);
   }
   to {
     transform: translate(0px, 0px);
   }
 }
-.main-h2 {
-  font-size: 27px;
-}
-
-.text-deco div p {
-  font-size: 19px;
-}
-
-.text-deco p::first-letter {
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(128, 36, 0);
-}
-
-.text-deco h4 {
-  font-size: 20px;
-  background-color: rgb(255, 216, 190);
-  width: fit-content;
-  margin: 0px auto 10px auto;
-  border-radius: 5px;
-}
-
 .bordercat {
   margin: 50px 0px 50px 0px;
   display: grid;
@@ -205,7 +175,7 @@ main h1 {
 @media (max-width: 520px) {
   .bordercat {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
   }
   .bordercat div img {
@@ -302,7 +272,6 @@ aside p {
 
 .flexco {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -324,4 +293,4 @@ form div label {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */

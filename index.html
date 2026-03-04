@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="main-background">
 
     <header>
         <nav class="navbar navbar-expand-lg">
@@ -68,21 +68,22 @@
 
 
 
-    <main>
+    <main  class="text-deco">
 
-        <h1>Bienvenido a Coffeebreak</h1>
+        <h1 class="main-h1"><i style="border-bottom: 2px solid rgb(54, 163, 81);">Bienvenido a Coffeebreak</i></h1>
 
-        <h2>El cafe evoluciono con el paso del tiempo</h2>
+        <h2 class="main-h2">El cafe evoluciono con el paso del tiempo</h2>
+        
+        <div>
+            <p>
+                El café para muchos se convirtio en un rito. una de las dimensiones más profundas y hermosas de su consumo
+                va mucho más allá de la necesidad de cafeína, se trata de significado, conexión y un momento de pausa en lo                cotidiano.
+            </p>
+        
+            <h3>Estas son unas de las ultimas novedades</h3>
 
-        <p>
-            El café para muchos se convirtio en un rito. una de las dimensiones más profundas y hermosas de su consumo
-            va mucho más allá de la necesidad de cafeína, se trata de significado, conexión y un momento de pausa en lo
-            cotidiano.
-        </p>
-
-        <h3>Estas son unas de las ultimas novedades</h3>
-
-        <h4>Visita nuestro catalogo para ver mas</h4>
+            <h4>Visita nuestro catalogo para ver mas</h4>
+        </div>
 
         <section class="borderin img-fluid">
 
@@ -96,9 +97,12 @@
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/cafe-helado.jpg" class="w-100" alt="cafe helado">
+                <div class="carousel-inner container">
+                    <div class="carousel-item active img-flui">
+                        <a href="./pages/catalogo.html#cafe-helado">
+                            <img src="./img/cafe-helado.jpg" class="w-100" alt="cafe helado">
+                        </a>
+                        
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Cafe helado</h5>
                         </div>
@@ -135,7 +139,7 @@
 
         <p>Mantén tu frescura, cambia la temperatura. Una pausa refrescante con todo el carácter.</p>
 
-        <section class="borderin img-fluid ">
+        <section class="borderin img-fluid container ">
 
             <div id="carouselExampleCaptions2" class="carousel slide">
                 <div class="carousel-indicators">

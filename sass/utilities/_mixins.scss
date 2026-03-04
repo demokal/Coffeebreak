@@ -1,0 +1,10 @@
+@mixin flex ($direction, $wrap){
+    display: flex;
+    flex-direction:$direction;
+    flex-wrap: $wrap;
+}
+
+@mixin img ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}

@@ -8,6 +8,13 @@
     background: linear-gradient(rgb(241, 241, 241) 0% 35% , rgb(230, 190, 166));
 }
 
+.container img{
+    width: 650px;
+    max-height: 650px;
+    
+}
+
+
 
 @media (max-width:1200px){
     .container img{

@@ -1,3 +1,6 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/variables' as *;
+
 .borderin{
     width : 70%;
     margin : 30px auto;
@@ -8,18 +11,38 @@
     background: linear-gradient(rgb(241, 241, 241) 0% 35% , rgb(230, 190, 166));
 }
 
-.container img{
-    width: 650px;
-    max-height: 650px;
-    
+.active{
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 50%; 
 }
 
 
+
+.container img{
+    width: 650px;
+    max-height: 690px;
+}
+
+@media (max-width:1700px){
+    .carousel-control-next, .carousel-control-prev{
+        width: 20%;
+    }
+    
+}
 
 @media (max-width:1200px){
     .container img{
         width: 350px;
         height: 500px;
+
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        width: 40%;
 
     }
 }
@@ -34,10 +57,16 @@
 
 @media (max-width:520px){
     .container img{
-        width: 150px;
+        width: 250px;
         height: 300px;
+    }
+    .carru-index{
+        flex-direction: column;
+        align-items: center;
 
     }
+
+
 }
 
 .main-h1{
@@ -79,4 +108,13 @@
     width: fit-content;
     margin: 0px auto 10px auto;
     border-radius: 5px;
+}
+
+
+.carru-index{
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+
 }

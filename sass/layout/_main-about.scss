@@ -16,7 +16,24 @@ div h3:first-child{
     margin: 0px auto 10px auto;
 }
 
+.cafelove{
+    margin-left: 300px;
+}
 
+@media (max-width :1000px){
+    .cafelove{
+        margin-left: 200px;
+    }
+
+}
+
+@media (max-width :700px){
+    .cafelove{
+        margin-left: 120px;
+    }
+
+    
+}
 
 
 .borderab{

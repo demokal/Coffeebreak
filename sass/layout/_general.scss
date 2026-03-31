@@ -47,8 +47,8 @@ header{
     top: 0;
     font-size: 17px;   
         li a:hover{
-            background-color: rgb(121, 77, 63);
-            border-bottom: 1px solid rgb(255, 255, 255);
+            background-color: rgba(100, 93, 92, 0.267);
+            border-bottom: 1px solid rgb(180, 180, 180);
         }
         
    
@@ -59,7 +59,31 @@ header{
     margin-right: 70px; 
 }
 
+header .btn{
+    color: rgb(228, 212, 202);
+    font-weight: 500;
+    background-color: rgb(88, 40, 20);
+    border-color: beige;
+    &:hover{
+        background-color: rgb(116, 31, 6);
+        border-color: beige;
+    }    
+}
 
+.navact{
+    background-color: #7F675B;
+    border-radius: 3px;
+
+}
+
+
+.nav-link{
+    margin: 0px 5px 0px 5px;
+}
+
+.me-auto{
+    margin-left: 60px;
+}
 
 
 
@@ -68,29 +92,29 @@ footer{
     color: white;  
     padding: 5px 0px 2px 0px;
     @include flex(null, wrap );
-
+    justify-content: center;
 
 
 }
 
-footer h4, footer p{
-    align-self:center ;
-
+.borderf{
+    border: 0;
+    border-top: 2px solid black;
+    width: 80vw;
 }
 
-
-footer div{
-    @include flex(null, wrap );
-    justify-content: space-evenly;
-    margin: 0px;
-    gap: 20px;
-
-}
 
 footer div ul{
     display: flex;
-    gap: 20px;
-    align-self: center;
+    gap: 50px;
+    justify-content: center;
+}
+
+footer div p{
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
 
@@ -100,12 +124,25 @@ ul li a img{
     width: 40px;
     height: 40px;
     margin-top: 5px;
+    
+}
+
+ul li a{
+    display: flex;
+    justify-content: center;
+}
+
+ul li p{
+    margin-top: 4px;
+    
 }
 
 #ig{
     width: 50px;
     height: 50px;
-    margin: auto;
+    margin: 0;
+
+    
 
 }
 

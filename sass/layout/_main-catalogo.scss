@@ -38,16 +38,33 @@ main h1{
 .modal-color{
     background-color: rgb(121, 105, 89);
     border-radius: 10px;
-    text-align: center;
     color: white;
     font-weight: bold;
     
+}
+
+.modal-color p{
+    text-align: center;
+
+}
+
+.text-modal p{
+    font-size: x-large;
+    color: rgb(255, 242, 229);
+}
+
+.text-modal li{
+    list-style:decimal ;
 }
 
 .colorcard:hover{
     background-color: rgba(165, 60, 8, 0.795);
     color: white;
     box-shadow: 0 0 5px rgba(59, 35, 4, 0.582);
+}
+
+.card-cat{
+    width: 28.2rem;
 }
 
 
@@ -57,8 +74,12 @@ main h1{
     }
 
     .bordercat div img{
-        width: 275px;
+        width: 300px;
         height: 250px;
+    }
+
+    .card-cat{
+        width: 19rem;
     }
 
     .bordercat div a{

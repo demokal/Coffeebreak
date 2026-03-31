@@ -36,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/catalogo.html">Catalogo</a>
@@ -56,7 +56,7 @@
                     </span>
 
                     <li class="nav-item sesion">
-                        <a class="btn btn-outline-success" href="#" role="button">Write a review</a>
+                        <a class="btn btn-outline-success" href="#" role="button">¡Haz una review!</a>
                         <ul class="dropdown-menu"></ul>
                     </li>
                 </div>
@@ -65,86 +65,82 @@
         </nav>
     </header>
 
+    
+
     <main class="borderco flexco text-deco">
-        <section>
-            <h1><i style="border-bottom: 2px solid rgb(54, 163, 81)">Compartinos tu opinion!</i></h1>
+        <div class="contact-box">
+            <section>
+                <h1><i style="border-bottom: 2px solid rgb(54, 163, 81)">Compartinos tu opinion!</i></h1>
+
+                <form action="/submit" method="post" class="flexco">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido">
+
+                </form>
+
+            </section>
+
+            <section>
+
+                <h2>Comenta aqui lo que piensas</h2>
+
+                <form action="/submit" method="post" class="flexco">
+                    <label for="coment"></label>
+                    <textarea name="coment" id="coment"></textarea>
+                </form>
+
+                <form action="/submit" method="post">
+                    <h3 style="margin-top: 20px;">Te gusto nuestro sitio?</h3>
+                    <div>
+                        <legend>Marcar una sola opcion</legend>
+                        <label for="si2">si</label>
+                        <input type="radio" name="chooseone" id="si">
+                        <label for="no2">no</label>
+                        <input type="radio" name="chooseone" id="no">
+                    </div>
+
+                </form>
+
+            </section>
 
             <form action="/submit" method="post" class="flexco">
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre">
-
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido">
+                <input type="submit" value="Enviar">
 
             </form>
 
-        </section>
-
-        <section>
-
-            <h2>Comenta aqui lo que piensas</h2>
-
-            <form action="/submit" method="post" class="flexco">
-                <label for="coment"></label>
-                <textarea name="coment" id="coment"></textarea>
-            </form>
-
-            <form action="/submit" method="post">
-                <h3>Te gusto nuestro sitio?</h3>
-                <div>
-                    <legend>Marcar una sola opcion</legend>
-                    <label for="si2">si</label>
-                    <input type="radio" name="chooseone" id="si">
-                    <label for="no2">no</label>
-                    <input type="radio" name="chooseone" id="no">
-                </div>
-
-            </form>
-
-        </section>
-
-        <form action="/submit" method="post" class="flexco">
-
-            <input type="submit" value="submit">
-
-        </form>
-
-
+        </div>
     </main>
 
 
     <footer>
         <div>
             <div>
-                <h4>redes sociales</h4>
-                <ul class="contactos">
-                    <li><a href="https://www.instagram.com/agu.sferre/"><img src="../img/instagram.webp" alt="instagram"
-                                id="ig"></a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100009521592303"><img src="../img/facebook.png"
-                                alt="facebook"></a></li>
-                    <li><a href="https://x.com/agu_sferre"><img src="../img/twitter.svg" alt="twitter"></a></li>
-                </ul>
-
-            </div>
-
-            <div>
-
-                <h4>contacto</h4>
                 <ul>
-                    <li>+54 ** ****-****</li>
-                    <li>Carmonaagustin905@gmail.com</li>
+                    <li><a href="https://www.instagram.com/agu.sferre/"><img src="../img/instagram.webp" alt="instagram"
+                                id="ig"></a><p>Instagram</p></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100009521592303"><img src="../img/facebook.png"
+                                alt="facebook"></a><p style="margin-top: 10px;">Facebook</p></li>
+                    <li><a href="https://x.com/agu_sferre"><img src="../img/twitter.svg" alt="twitter"></a><p style="margin-top: 10px;">Twitter</p></li>
+
+                    <li><a href="https://www.linkedin.com/in/agustin-carmona-980941267/"><img src="../img/linkedin.avif" alt="Linkedin"></a><p style="margin-top: 10px;">Linkedin</p></li>
+                    
                 </ul>
-
-
 
             </div>
 
+            <hr class="borderf">
+            
+
             <div>
-                <p>Sitio echo por Carmona Agustin</p>
+                <p>© 2026 Carmona Agustin - Coffeebrak</p>
             </div>
         </div>
     </footer>
